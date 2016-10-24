@@ -26,7 +26,6 @@ p {
 form {
   margin-bottom: 25px;
   padding: 15px;
-  display: inline-block;
   width: 100%;
   max-width: 600px;
   border-radius: 3px;
@@ -38,11 +37,9 @@ select {
 
 input {
   font-size: 14px;
-  margin-bottom: 10px;
-  padding: 5px;
   width: 50px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
 }
 
 button {
