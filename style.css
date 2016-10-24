@@ -19,10 +19,6 @@ h1 {
   color: pink;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 p {
   max-width: 600px;
 }
@@ -37,7 +33,7 @@ form {
 }
 
 select {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 input {

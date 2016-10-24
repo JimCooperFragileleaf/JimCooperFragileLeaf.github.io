@@ -12,9 +12,9 @@ $(function() {
     event.preventDefault();
     var numberOfLeftovers = document.getElementById("numberOfLeftovers").value;
     var multiplier=document.getElementById("foodstuff").value;
-    var co2=numberOfLeftovers * multiplier;
+    var co2=Math.abs(numberOfLeftovers) * multiplier;
     var km=co2 / 0.16;
-    document.getElementById('co2Result').innerHTML = co2 + ' kg of CO<sub>2</sub>';
-    document.getElementById('kmResult').innerHTML = km + ' km in an average car';
+    document.getElementById('co2Result').innerHTML = co2.toFixed(3) + ' kg of CO<sub>2</sub><br>' + 
+                                                     km.toFixed(2) + ' km in an average car';
     });
 });
