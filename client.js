@@ -5,11 +5,6 @@
 // add other scripts at the bottom of index.html
 
 $(function () {
-  $('form').submit(function(event) {
-    event.preventDefault();
-    CalculateFootprints();
-  });
-  
   $('#numberOfLeftovers').on('input', function() { 
     CalculateFootprints();
   });

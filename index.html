@@ -1,45 +1,29 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
-
-<!-- You might want to try something fancier: -->
-<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
-<!-- jade: http://jade-lang.com/ -->
-<!-- haml: http://haml.info/tutorial.html -->
-<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
-
 <!DOCTYPE html>
 <html>
   <head>
     <title>Footprint Calculation</title>
-    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
+    <p>Calculate carbon footprint:</p>
 
-      <p>Calculate carbon footprint:</p>
-      <form>
-        Number of leftovers
-        <input id="numberOfLeftovers" type="number" min=1 value=1>
+    Number of leftovers
+    <input id="numberOfLeftovers" type="number" min=1 value=1>
+    of
+    <select id="foodstuff">
+      <option value="0.45575">Broodjes - vlees</option>
+      <option value="0.3696">Broodjes - kaas</option>
+      <option value="0.046">Banana</option>
+      <option value="0.06825">Koffie</option>
+    </select>
 
-        <select id="foodstuff">
-          <option value="0.45575">Broodjes - vlees</option>
-          <option value="0.3696">Broodjes - kaas</option>
-          <option value="0.046">Banana</option>
-          <option value="0.06825">Koffie</option>
-        </select>
-
-        <button type="submit">Submit</button>
-        <br><br>
-        <label id="co2Result"/>
-        <br>
-        <label id="kmResult"/>
-      </form>
-
-    </main>
-
+    <br><br>
+    <label id="co2Result"/>
+    <br>
+    <label id="kmResult"/>
 
     <!-- Your web-app is https, so your scripts need to be too -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
