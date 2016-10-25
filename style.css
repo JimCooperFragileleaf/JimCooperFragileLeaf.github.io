@@ -1,3 +1,7 @@
 input.numberInput{
     width: 50px;
 }
+
+.fixedTable {
+    width: 450px;
+}
