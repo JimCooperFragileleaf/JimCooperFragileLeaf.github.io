@@ -7,31 +7,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
   </head>
+    
   <body>
-    <p>Calculate carbon footprint:</p>
+    <table width=450 id="footprintsTable">
+        <tr>
+            <th></th>
+            <th class="left">Sandwiches</th>            
+            <th class="right">CO<sub>2</sub> (kg)</th>
+            <th class="right">CO<sub>2</sub>%</th>
+            <th class="right">Water (l)</th>
+            <th class="right">Water%</th>
+        </tr>                
+        <tr>
+            <td><input id="pork" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Pork</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="beef" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Beef</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="chicken" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Chicken</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="salmon" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Salmon</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="cheese" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Cheese</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+       
+        <tr>
+            <th colspan=2>Drinks</th>
+        </tr>
+        <tr>
+            <td><input id="orangeJuice" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Orange juice</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="milk" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Milk</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="coffee" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Coffee</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-    <table>
         <tr>
-            <td><input id="broodjesVlees" type="number" min=1 value=1 class="numberInput"></td>
-            <td>Broodjes - vlees</td>
+            <th colspan=2>Fruit</th>
         </tr>
         <tr>
-            <td><input id="broodjesKaas" type="number" min=1 value=1 class="numberInput"></td>
-            <td>Broodjes - kaas</td>
+            <td><input id="apple" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Apple</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td><input id="banaan" type="number" min=1 value=1 class="numberInput"></td>
-            <td>Banaan</td>
+            <td><input id="pear" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Pear</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td><input id="koffie" type="number" min=1 value=1 class="numberInput"></td>
-            <td>Koffie</td>
+            <td><input id="clementine" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Clementine</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="orange" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Orange</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="banana" type="number" min=0 value=0 class="numberInput"></td>
+            <td>Banana</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
       
     <br>
     <label id="co2Result"/>
 
+      
     <!-- Your web-app is https, so your scripts need to be too -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="

@@ -19,9 +19,28 @@ select {
 }
 
 input {
-  font-size: 14px;
-  width: 50px;
-  border: 1px solid darkgrey;
-  border-radius: 5px;
+    font-size: 14px;
+    width: 50px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
 }
 
+th {
+    font-weight: bold;
+}
+
+th .left {
+    text-align: left;    
+}
+
+th .right {
+    text-align: right;    
+}
+
+td .left {
+    text-align: left;    
+}
+
+td .right {
+    text-align: right;    
+}
