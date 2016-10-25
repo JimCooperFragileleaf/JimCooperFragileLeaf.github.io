@@ -10,26 +10,33 @@
   <body>
     <p>Calculate carbon footprint:</p>
 
-    Number of leftovers
-    <input id="numberOfLeftovers" type="number" min=1 value=1>
-    of
-    <select id="foodstuff">
-      <option value="0.45575">Broodjes - vlees</option>
-      <option value="0.3696">Broodjes - kaas</option>
-      <option value="0.046">Banana</option>
-      <option value="0.06825">Koffie</option>
-    </select>
+    <table>
+        <tr>
+            <td><input id="broodjesVlees" type="number" min=1 value=1 class="numberInput"></td>
+            <td>Broodjes - vlees</td>
+        </tr>
+        <tr>
+            <td><input id="broodjesKaas" type="number" min=1 value=1 class="numberInput"></td>
+            <td>Broodjes - kaas</td>
+        </tr>
+        <tr>
+            <td><input id="banaan" type="number" min=1 value=1 class="numberInput"></td>
+            <td>Banaan</td>
+        </tr>
+        <tr>
+            <td><input id="koffie" type="number" min=1 value=1 class="numberInput"></td>
+            <td>Koffie</td>
+        </tr>
+    </table>
       
-    <br><br>
-    <label id="co2Result"/>
     <br>
-    <label id="kmResult"/>
+    <label id="co2Result"/>
 
     <!-- Your web-app is https, so your scripts need to be too -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
-    <script src="/client.js"></script>
+    <script type="text/javascript" src="/client.js"></script>
 
   </body>
 </html>
