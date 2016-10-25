@@ -7,7 +7,7 @@ $(function () {
     var rowNumbers = [1, 2, 3, 4, 5, 7, 8, 9, 11, 12, 13, 14, 15];
     var inputIds = ['pork', 'beef', 'chicken', 'salmon', 'cheese', 'orangeJuice', 'milk', 'coffee', 'apple', 'pear', 'clementine', 'orange', 'banana'];
     var co2Multipliers = [0.1905, 0.45575, 0.13325, 0.1785, 0.3696, 0.668, 1.062, 0.273, 0.0325, 0.0423, 0.0144, 0.048, 0.046];
-    var waterMultipliers = [5988, 15415, 4325, 0, 5060, 1018, 1020, 0, 822, 922, 748, 0, 0];
+    var waterMultipliers = [149.7, 385.375, 108.125, 0, 151.8, 1018, 1020, 0, 102.75, 130.002, 33.66, 0, 0];
     const co2DPs = 2;
     const waterDPs = 0;
     const co2Column = 2;
