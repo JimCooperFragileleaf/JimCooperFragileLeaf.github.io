@@ -6,6 +6,10 @@ input.numberInput{
     width: 450px;
 }
 
+.table-condensed>tbody>tr>th, .table-condensed>tbody>tr>td {
+    padding: 0px;
+}
+
 .jumbotron {
     position: relative;
     background: url("headingImage.png") center center;
