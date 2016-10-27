@@ -16,7 +16,8 @@ input.numberInput{
     width: 100%;
     height: 100%;
     background-size: cover;
-    overflow: hidden
+    overflow: hidden;
+    margin-bottom: 0;
 }
 
 .textOverImage {
