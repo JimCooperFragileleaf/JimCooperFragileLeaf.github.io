@@ -24,12 +24,19 @@ $(function () {
     SetTableValues(co2Column, co2PercColumn, totalCO2, rowNumbers, inputIds, co2Multipliers, co2DPs, percDPs);
     SetTableValues(waterColumn, waterPercColumn, totalWater, rowNumbers, inputIds, waterMultipliers, waterDPs, percDPs);
     
-    document.getElementById('co2Result').innerHTML = totalCO2 + ' kg of CO<sub>2</sub><br>' + 
-                                                     km + ' km in an average car<br><br>' +
-                                                     totalWater + ' litres of water<br>' +
-                                                     bathTubs + ' bathtubs';
-    }
+    SetFootprints(totalCO2, km, totalWater, bathTubs);
+  }
   
+  function SetFootprints(totalCO2, km, totalWater, bathTubs) {
+      var co2Cell = document.getElementById("footprintsTable").rows[0].cells[0];
+      var waterCell = document.getElementById("footprintsTable").rows[0].cells[1];      
+
+      co2Cell.innerHTML = totalCO2 + ' kg of CO<sub>2</sub><br>' + 
+                          km + ' km in an average car';
+      waterCell.innerHTML = totalWater + ' litres of water<br>' +
+                            bathTubs + ' bathtubs';
+ }
+    
   function SetTableValues(column, percColumn, total, rowNumbers, inputIds, multipliers, decimalPoints, percDecimalPoints) {
      for (i = 0; i < rowNumbers.length; i++) {
          var value = CalculateValueFor(inputIds[i], multipliers[i]).toFixed(decimalPoints);
@@ -44,7 +51,7 @@ $(function () {
   }    
       
   function SetCellValue(row, column, value){
-      var cell = document.getElementById("footprintsTable").rows[row].cells[column];
+      var cell = document.getElementById("dataTable").rows[row].cells[column];
       
       cell.innerHTML = value;
   }

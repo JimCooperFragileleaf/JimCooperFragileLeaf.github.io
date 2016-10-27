@@ -22,3 +22,7 @@ input.numberInput{
 .textOverImage {
     color:black;
 }
+
+.boldText {
+    font-weight: bold;
+}
