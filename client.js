@@ -17,7 +17,7 @@ $(function () {
     const waterPercColumn = 5;
     
     var totalCO2 = GetTotal(inputIds, co2Multipliers, co2DPs).toFixed(co2DPs);
-    var km = (totalCO2 / 0.1196).toFixed(co2DPs);
+    var km = (totalCO2 / 0.16).toFixed(co2DPs);
     var totalWater = GetTotal(inputIds, waterMultipliers, waterDPs).toFixed(waterDPs);
     var bathTubs = (totalWater / 80).toFixed(1);
       
